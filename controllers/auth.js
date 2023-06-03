@@ -40,7 +40,7 @@ exports.postLogin = (req, res, next) => {
       }
       req.flash("success", { msg: "Success! You are logged in." });
       //When you log in, this makes sure you get redirected to feed instead of /profile
-      res.redirect(req.session.returnTo || "/feed");
+      res.redirect(req.session.returnTo || "/mymeals");
     });
   })(req, res, next);
 };

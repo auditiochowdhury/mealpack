@@ -2,6 +2,11 @@
     margin-bottom: 1px;
 }
 
+.img-fluid{
+    height: 250px;
+    width: auto;
+}
+
 
 
 .headerLogo{
@@ -16,6 +21,7 @@
     align-items: center;
     
 }
+
 
 
 /* Feed */
@@ -55,6 +61,7 @@ body {
 .row{
     margin-bottom: 50px;
 }
+
 
  
 

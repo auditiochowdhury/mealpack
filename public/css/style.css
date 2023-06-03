@@ -2,12 +2,16 @@
     margin-bottom: 1px;
 }
 
+
+
 .img-fluid{
     height: 250px;
     width: auto;
 }
 
-
+.description{
+    color: tomato;
+}
 
 .headerLogo{
     height: 1px;

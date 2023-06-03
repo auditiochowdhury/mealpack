@@ -75,6 +75,9 @@
     </header>
   </div>
 
+
+
+  
   <div class="container">
     <div class="row justify-content-center mt-5">
       <ul class="row list-unstyled">
@@ -82,6 +85,7 @@
           <li class="col-6 justify-content-between mt-5">
             <a href="/post/<%= posts[i]._id%>">
               <img class="img-fluid" src="<%= posts[i].image%>">
+              <span class="description"><%= posts[i].meal%></span>
             </a>
           </li>
         <% } %>

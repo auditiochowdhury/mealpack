@@ -1,0 +1,61 @@
+.container{
+    margin-bottom: 1px;
+}
+
+
+
+.headerLogo{
+    height: 1px;
+    width: auto;
+}
+
+.showBoat{
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+/* Feed */
+.feedContainer{
+    display: flex;
+}
+.feedNav{
+    
+}
+.navUl{
+
+}
+.feedBoat{
+    
+    
+}
+
+
+.boat{
+    
+    height: 260px;
+    width: 260px;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+.footer{
+    margin-top: auto;
+    
+}
+
+.row{
+    margin-bottom: 50px;
+}
+
+ 
+
+ 

@@ -31,6 +31,7 @@ module.exports = {
       console.log(err);
     }
   },
+  
   getPost: async (req, res) => {
     try {
       const post = await Post.findById(req.params.id);
@@ -75,14 +76,28 @@ module.exports = {
       console.log(err);
     }
   },
-  // making a route for favorite a meal, its going to be the star next to heart
+  // making a contoller for favorite a meal, its going to be the star next to heart
   favoritePost: async (req, res) => {
     try {
       await Post.findOneAndUpdate(
-        
-      );
-      console.log("favorited");
+        //This code saved me, helps the server know which post to favorite, before it was only favoriting one specific post no matter what
+        { _id: req.params.id },
+
+        //stack overflow, code that can help me toggle boolean field for favorites
+        [{$set: {favorited:{$eq:[false,"$favorited"]}}}])
+      
       res.redirect(`/post/${req.params.id}`);
+    } catch (err) {
+      console.log(err);
+    }
+  },
+  getFavorites: async (req, res) => {
+    try {
+      //.lean() trims the fat and we get to work with just the js object.
+      //Wow. THIS Was the code i needed to add the favorited meal into the favorites.ejs. I dont even need a Favorites model
+      // 
+      const posts = await Post.find({ favorited: true }).sort({ createdAt: "desc" }).lean();
+      res.render("favorites.ejs", { posts: posts });
     } catch (err) {
       console.log(err);
     }

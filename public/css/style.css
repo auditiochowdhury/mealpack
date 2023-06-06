@@ -78,4 +78,17 @@ footer{
 
 .btn{
     margin-top: 4px;
+    
+}
+
+
+
+.postStyle{
+font-size: 35px;
+font-family: 'Prompt', sans-serif;
+font-family: 'Suez One', serif;
+color: rgb(86, 183, 85);
+margin-bottom: 11px;
+text-decoration: underline;
+text-decoration-color: black;
 }

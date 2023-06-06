@@ -107,7 +107,7 @@
           <%}%>
         <h3 class="col-3 postDetail">Likes: <%= post.likes %></h3>
         <h4 class="col-3 postDetail">Favorited?<%if(post.favorited == true){%> 
-          <span class="postDetail">yes</span> <%}else{%> <span class="postDetail">no</span><%}%>
+          <span class="postDetail">Yes</span> <%}else{%> <span class="postDetail">No</span><%}%>
         </h4>
         
         
@@ -116,13 +116,16 @@
     </div>
     <div class="col-3 mt-5">
       <!-- adding this made the styling of the divs weird -->
+      <h2 class="postStyle">Name of Meal</h2>
       <p class="postName"><%= post.meal %></p>
     </div>
     <div class="col-3 mt-5">
+      <h2 class="postStyle">Description</h2>
       <p class="postDetail">-<%= post.caption %></p>
     </div>
     <!-- just copied the one above and added the div to contain ingredients/instructions -->
     <div class="col-3 mt-5">
+      <h2 class="postStyle">Ingredients and/or Instructions</h2>
       <p class="postDetail">-<%= post.ingredients %></p>
     </div>
     <div class="mt-5">

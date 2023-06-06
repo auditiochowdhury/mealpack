@@ -2,6 +2,8 @@ const cloudinary = require("../middleware/cloudinary");
 const Post = require("../models/Post");
 const Comment = require("../models/Comment");
 const Favorite = require("../models/Favorite");
+const User = require("../models/User");
+
 
 
 module.exports = {

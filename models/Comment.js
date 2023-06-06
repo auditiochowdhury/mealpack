@@ -17,9 +17,9 @@ const CommentSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
-  favorite: {
-    type: Boolean,
-    required: true,
+  user: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "User",
   }
 
 });
